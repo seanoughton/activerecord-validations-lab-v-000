@@ -10,6 +10,7 @@ class Post < ActiveRecord::Base
     #if title != "Won't Believe"
       #errors.add(:title, "must be clickbait")
     #end
+    errors.add(:title, "must be clickbait")
     false
   end
 
