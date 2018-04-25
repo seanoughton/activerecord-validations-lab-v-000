@@ -11,7 +11,7 @@ class Post < ActiveRecord::Base
       #errors.add(:title, "must be clickbait")
     #end
     errors.add(:title, "must be clickbait")
-    false
+    #false
   end
 
 end
