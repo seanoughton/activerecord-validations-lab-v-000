@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
    def is_clickbait?
      binding.pry
      #if CLICKBAIT_PATTERNS.none? { |pat| pat.match title }
-     if title.include?("Secret" || "Guess" || "Won't Believe")
+     if title.include?("Secret" || "Guess") || title.include?("Won't" && "Believe")
        errors.add(:title, "must be clickbait")
      end
    end
