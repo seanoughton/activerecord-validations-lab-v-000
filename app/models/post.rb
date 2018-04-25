@@ -12,4 +12,5 @@ class Post < ActiveRecord::Base
     #end
     true
   end
+  
 end
