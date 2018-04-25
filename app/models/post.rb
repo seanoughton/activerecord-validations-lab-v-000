@@ -8,9 +8,9 @@ class Post < ActiveRecord::Base
 
   def is_clickbait?
     #if title != "Won't Believe"
-      errors.add(:title, "must be clickbait")
+      #errors.add(:title, "must be clickbait")
     #end
     true
   end
-  
+
 end
