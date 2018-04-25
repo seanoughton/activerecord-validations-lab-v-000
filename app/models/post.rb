@@ -18,7 +18,7 @@ class Post < ActiveRecord::Base
      #if CLICKBAIT_PATTERNS.none? { |pat| pat.match title }
      if title
        if !title.include?("Won't" && "Believe") || !title.include?("Secret" || "Guess") || !title.include?("Won't" && "Believe") || !title.include?("/Top [0-9]*/")
-         
+         true
        else
          errors.add(:title, "must be clickbait")
        end
