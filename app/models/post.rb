@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
   validates :summary, length: { maximum: 250 }
   validates :category, inclusion: { in: %w(Fiction Non-Fiction),
     message: "%{value} is not a valid category" }
-    validate :is_clickbait?
+  validate :is_clickbait?
 
    CLICKBAIT_PATTERNS = [
      /Won't Believe/i,
